@@ -1,0 +1,21 @@
+<idea-plugin>
+    <id>com.example.exporter</id>
+    <name>Interface Exporter</name>
+    <vendor email="support@example.com" url="https://example.com">Example</vendor>
+    <description>Export HTTP and custom interfaces to HTML or Markdown.</description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+    </extensions>
+
+    <actions>
+        <action id="ExportInterfacesAction"
+                class="com.example.exporter.ExportAction"
+                text="Export Interface Documentation"
+                description="Export selected interface, method, or API file">
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+            <add-to-group group-id="ProjectViewPopupMenu" anchor="last"/>
+        </action>
+    </actions>
+</idea-plugin>
