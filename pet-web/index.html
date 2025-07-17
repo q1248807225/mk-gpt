@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>虚拟宠物</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+<div id="app">
+    <h1>{{ name }}</h1>
+    <div id="pet">(=^･ω･^=)</div>
+    <div class="status">
+        <div>饥饿值: {{ hunger }}</div>
+        <div>快乐值: {{ happiness }}</div>
+    </div>
+    <button @click="feed">喂食</button>
+    <button @click="play">玩耍</button>
+    <button @click="renamePet">重命名</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
