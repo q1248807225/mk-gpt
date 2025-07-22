@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>营销活动 Demo</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="app">
+    <h1>营销活动流程</h1>
+    <input v-model="processKey" placeholder="流程定义key">
+    <button @click="start">启动流程</button>
+    <p v-if="instanceId">流程实例: {{ instanceId }}</p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
