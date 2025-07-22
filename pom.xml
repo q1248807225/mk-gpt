@@ -9,5 +9,6 @@
 
     <modules>
         <module>pet-server</module>
-    </modules>
+        <module>marketing-server</module>
+</modules>
 </project>

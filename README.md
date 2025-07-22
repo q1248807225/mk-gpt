@@ -14,3 +14,17 @@
    mvn -pl pet-server spring-boot:run
    ```
 2. 打开浏览器访问 [http://localhost:8080](http://localhost:8080) 即可开始与宠物互动。
+
+## 营销活动示例
+
+新增了 `marketing-server` (Spring Boot + Flowable) 和 `marketing-web` (Vue) 两个目录，用于展示基于流程编排的营销活动架构。
+
+### 运行后端
+
+```
+mvn -pl marketing-server spring-boot:run
+```
+
+### 运行前端
+
+直接打开 `marketing-web/index.html` 即可，通过按钮启动流程示例。
